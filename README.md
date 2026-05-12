@@ -1,6 +1,14 @@
 # @nimerdev/sdk
 
+[![npm version](https://img.shields.io/npm/v/@nimerdev/sdk?color=blue)](https://www.npmjs.com/package/@nimerdev/sdk)
+[![npm downloads](https://img.shields.io/npm/dm/@nimerdev/sdk?color=blue)](https://www.npmjs.com/package/@nimerdev/sdk)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@nimerdev/sdk?color=blue)](https://bundlephobia.com/package/@nimerdev/sdk)
+[![types](https://img.shields.io/npm/types/@nimerdev/sdk)](https://www.npmjs.com/package/@nimerdev/sdk)
+[![license](https://img.shields.io/npm/l/@nimerdev/sdk?color=blue)](./LICENSE)
+
 Official TypeScript SDK for [Nimer](https://nimer.dev) — the multi-provider AI gateway with built-in halal compliance, virtual keys, prompt cache, quality-aware routing, audit log, and outgoing webhooks.
+
+> **One client, 7 providers, halal-aware out of the box.** Switch from OpenAI SDK in 3 lines and inherit virtual keys, budget caps, prompt cache, function calling, streaming, webhooks, audit log, and a halal-content filter — all behind a single `nm_…` key.
 
 - ✅ **Single client, every endpoint** — chat, ultrathink, embeddings, virtual keys, audit log, webhooks
 - ✅ **Halal-aware** — typed `HalalBlockedError` with reason + category
