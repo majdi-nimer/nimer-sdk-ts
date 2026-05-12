@@ -1,5 +1,5 @@
 {
-  "name": "@nimer/sdk",
+  "name": "@nimerdev/sdk",
   "version": "0.1.0",
   "description": "Official TypeScript SDK for Nimer — the multi-provider AI gateway with built-in halal compliance, virtual keys, prompt cache, and audit log.",
   "license": "MIT",
@@ -7,10 +7,10 @@
   "homepage": "https://nimer.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nimer-dev/sdk-ts.git"
+    "url": "git+https://github.com/majdi-nimer/nimer-sdk-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/nimer-dev/sdk-ts/issues"
+    "url": "https://github.com/majdi-nimer/nimer-sdk-ts/issues"
   },
   "keywords": [
     "nimer",

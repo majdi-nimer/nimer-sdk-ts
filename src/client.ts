@@ -34,7 +34,7 @@ const DEFAULT_BASE_URL = "https://api.nimer.dev";
  * Entrypoint to the Nimer API.
  *
  * ```ts
- * import { NimerClient } from "@nimer/sdk";
+ * import { NimerClient } from "@nimerdev/sdk";
  *
  * const client = new NimerClient({ apiKey: process.env.NIMER_API_KEY });
  * const reply = await client.chat.createText([

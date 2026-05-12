@@ -8,7 +8,7 @@
  * Verify on your server like this:
  *
  * ```ts
- * import { verifyWebhookSignature } from "@nimer/sdk";
+ * import { verifyWebhookSignature } from "@nimerdev/sdk";
  *
  * const valid = await verifyWebhookSignature({
  *   payload: rawBody,

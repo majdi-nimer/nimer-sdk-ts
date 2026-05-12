@@ -1,4 +1,4 @@
-# @nimer/sdk
+# @nimerdev/sdk
 
 Official TypeScript SDK for [Nimer](https://nimer.dev) — the multi-provider AI gateway with built-in halal compliance, virtual keys, prompt cache, quality-aware routing, audit log, and outgoing webhooks.
 
@@ -11,11 +11,11 @@ Official TypeScript SDK for [Nimer](https://nimer.dev) — the multi-provider AI
 - ✅ **Tiny + zero runtime deps** — just the platform `fetch` and Web Crypto
 
 ```bash
-npm install @nimer/sdk
+npm install @nimerdev/sdk
 # or
-pnpm add @nimer/sdk
+pnpm add @nimerdev/sdk
 # or
-yarn add @nimer/sdk
+yarn add @nimerdev/sdk
 ```
 
 ---
@@ -23,7 +23,7 @@ yarn add @nimer/sdk
 ## Quick start
 
 ```ts
-import { NimerClient } from "@nimer/sdk";
+import { NimerClient } from "@nimerdev/sdk";
 
 const client = new NimerClient({ apiKey: process.env.NIMER_API_KEY });
 
@@ -143,7 +143,7 @@ console.log("STORE THIS SECRET:", ep.secret);
 On the receiving server:
 
 ```ts
-import { verifyWebhookSignature } from "@nimer/sdk";
+import { verifyWebhookSignature } from "@nimerdev/sdk";
 
 app.post("/nimer-events", express.text({ type: "*/*" }), async (req, res) => {
   const ok = await verifyWebhookSignature({
@@ -188,7 +188,7 @@ const certified = await client.halal.certifiedModels();
 const audit = await client.halal.audit({ limit: 100, reason: "gambling" });
 
 // Catch blocks
-import { HalalBlockedError } from "@nimer/sdk";
+import { HalalBlockedError } from "@nimerdev/sdk";
 try {
   await client.chat.create({ messages: [{ role: "user", content: "Best wines?" }] });
 } catch (err) {
