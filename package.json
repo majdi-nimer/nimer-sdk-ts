@@ -1,0 +1,75 @@
+{
+  "name": "@nimer/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript SDK for Nimer — the multi-provider AI gateway with built-in halal compliance, virtual keys, prompt cache, and audit log.",
+  "license": "MIT",
+  "author": "Nimer <hello@nimer.dev>",
+  "homepage": "https://nimer.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimer-dev/sdk-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nimer-dev/sdk-ts/issues"
+  },
+  "keywords": [
+    "nimer",
+    "llm",
+    "ai",
+    "openai",
+    "anthropic",
+    "gemini",
+    "halal",
+    "compliance",
+    "multi-provider",
+    "ai-gateway",
+    "router",
+    "embeddings",
+    "rag"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup --tsconfig tsconfig.build.json",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --max-warnings 0",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "@vitest/coverage-v8": "^2.1.5",
+    "eslint": "^9.15.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
